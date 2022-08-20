@@ -12,12 +12,59 @@ header,footer{
 .first,.third, .fourth{
     height:300px;
     width: 20%;
-    border:3px solid green;
+    border:3px solid black;
     float:left;
 }
 .second{
     height: 300px;
     width: 40%;
-    border:3px solid blue;
+    border:3px solid black;
     float:left;
+}
+
+@media screen and (max-width:414px){
+    .first{
+        background:#3772ff;
+        width:100%;
+        clear:both;
+    }
+    .second{
+        background:#fdca40;
+        width:100%;
+        clear:both;
+    }
+    .third{
+        background:#df2935;
+        width:100%;
+        clear:both;
+    }
+    .fourth{
+        background:#080708;
+        width:100%;
+        clear:both;
+    }
+}
+
+@media (min-width:415px) and (max-width:1280px){
+    .first{
+        background:#3772ff;
+        width:33.33%;
+        float: left;
+    }
+    .second{
+        background:#fdca40;
+        width:100%;
+        clear:both;
+        display:none;
+    }
+    .third{
+        background:#df2935;
+        width:33.33%;
+        float:left;
+    }
+    .fourth{
+        background:#080708;
+        width:33.33%;
+        float:left;
+    }
 }
